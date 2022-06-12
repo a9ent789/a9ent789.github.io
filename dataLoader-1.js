@@ -1,10 +1,13 @@
+//Tecumseh McMullin
 /****************************************************************
  * Functions
 ****************************************************************/
+//global variables
 var timeCount=0;
 var timeID;
 var data;
 
+//data for the table and a function to load it into the table
 function loadData() {
     data = [];
 
@@ -513,6 +516,7 @@ function loadData() {
         return data;
 }
 
+//this sets original data on loading
 function setDefault(){
     document.getElementById("R1").innerHTML = 5;
     document.getElementById("R2").innerHTML = 0;
@@ -536,6 +540,8 @@ function setDefault(){
     document.getElementById("R20").innerHTML = 0.01;
     document.getElementById("R21").innerHTML = -0.4;
 }
+
+//this loads the data based on where we are at at the time
 function setVariables(i)
 {
     loadData();
@@ -562,15 +568,13 @@ function setVariables(i)
     document.getElementById("R21").innerHTML = data[i][20];
 }
 
+//this starts the timer and starts the change of the data
 function startButton(){
     setVariables(timeCount)
     timeCount = timeCount + 1;
 }
 
+//this stopps everything
 function stopButton(){
     clearInterval(timeID);
-}
-
-function UATspace(){
-    location.replace("HW7.html");
 }
