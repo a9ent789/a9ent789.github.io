@@ -1,6 +1,53 @@
 @charset "utf-8";
 /* CSS Document */
 
+.SideBar{
+	float:left;
+	height: 678px;
+	border: 5px solid black;
+	border-radius: 45px;
+	width: 8%;
+	margin: 10px;
+	box-shadow: 0px 5px 10px 5px #003;
+	background-color: aliceblue;
+	
+}
+
+.mainParagraph{
+	margin:2%;
+}
+.sideIcon{
+	width: 100px;
+	padding: 10px;
+	padding-top: 20px;
+}
+
+.mainIntel{
+	height: 500px;
+	margin-left: 11%;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	margin-top: 12%;
+	border: 5px solid black;
+	float: inherit;
+	border-radius: 45px;
+	box-shadow: 0px 5px 10px 5px #003;
+	background-color: aliceblue;
+}
+
+.emailTitleMain{
+	/*The main focus is the border to create a visual appearance*/
+	border: 5px solid black;
+	heigt: 20px;
+	width: 88%;
+	margin: 10px;
+	border-radius: 45px;
+	box-shadow: 0px 5px 10px 5px #003;
+	background-color: aliceblue;
+	float: left;
+	
+	
+}
 /*This is the styling for the class emailTitle*/
 .emailTitle{
 	/*The main focus is the border to create a visual appearance*/
@@ -17,6 +64,7 @@
 	width: 30%;
 	padding: 1%;
 	float: left;
+	
 }
 
 /*This is all the settings to keep the email in the correct place*/
